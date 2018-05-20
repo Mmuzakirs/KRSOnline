@@ -37,13 +37,13 @@
 <div class="wrapper">
 
 <!-- Main Header -->
-@include('admin.includes.header')
+@include('includes.header')
 <!-- End Main Header -->
 
 
 
 <!-- Left side column. contains the logo and sidebar -->
-@include('admin.includes.sidebar')
+@include('includes.sidebar')
 <!-- /.sidebar-menu -->
 
 
@@ -52,22 +52,22 @@
 
 
     <!-- Main content -->
-    <section class="content">
+    <div class="container">
       <!-- Your Page Content Here -->
         @yield('content')
-    </section>
+    </div>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
 
 
   <!-- Main Footer -->
-  @include('admin.includes.footer')
+  @include('includes.footer')
   <!--  Main footer end -->
 
 
   <!-- Control Sidebar -->
-  @include('admin.includes.control')
+  @include('includes.control')
   <!-- /.control-sidebar -->
 
 
