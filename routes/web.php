@@ -11,27 +11,21 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('auth.login');
-// });
 Route::group([ 'middleware' => 'auth' ], function() {
-    
+
     Route::get('/', function () {
-        return view('admin.dashboard') ;
+        return view('dashboard') ;
     }) ;
 
-    Route::get('admin/users', 'UsersController@index')->name('user.index') ;
+    Route::get('dashboard', function () {
+        return view('dashboard') ;
+    }) ;
+
+    Route::resource('mahasiswas', 'MahasiswaController');
+
+    Route::get('users', 'UsersController@index')->name('user.index') ;
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-Route::group([ 'middleware' => 'auth' ], function() {
-    
-    Route::get('admin', function () {
-        return view('admin.dashboard') ;
-    }) ;
-
-    Route::get('admin/users', 'UsersController@index')->name('user.index') ;
-});

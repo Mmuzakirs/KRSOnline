@@ -3,20 +3,6 @@
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
 
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel">
-      
-        <div class="pull-left image">
-          <img src="{{ asset('images/user.png') }}" class="img-circle" alt="User Image">
-        </div>
-    
-        <div class="pull-left info">
-          <p>{{ Auth::user()->name }}</p>
-          <!-- Status -->
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-        </div>
-      </div>
-
       <!-- search form (Optional) -->
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
@@ -34,13 +20,16 @@
       <ul class="sidebar-menu">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="{{ Request::path() == 'admin' ? 'active' : '' }}"><a href="/admin"><i class="fa fa-tachometer" aria-hidden="true"></i> <span>Dashboard</span></a></li>
+        <li class="{{ Request::path() == 'dashboard' ? 'active' : '' }}"><a href="dashboard"><i class="fa fa-tachometer" aria-hidden="true"></i> <span>Dashboard</span></a></li>
 
 
         <!--  USERS  -->
-        <li class="{{ Request::path() == 'admin/users' ? 'active' : '' }}">
+        <li class="{{ Request::path() == 'users' ? 'active' : '' }}">
           <a href="{{ route('user.index') }}"><i class="fa fa-user"></i> Users</a>
         </li>
+
+        <li class="{{ Request::path() == 'mahasiswas' ? 'active' : '' }}"><a href="mahasiswas"><i class="fa fa-tachometer" aria-hidden="true"></i> <span>Mahasiswa</span></a></li>
+
 
       </ul>
       
