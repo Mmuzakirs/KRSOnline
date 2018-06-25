@@ -45,6 +45,26 @@ return [
             'driver' => 'token',
             'provider' => 'users',
         ],
+
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+
+        'api-admin' => [
+            'driver' => 'token',
+            'provider' => 'admins',
+        ],
+
+        'dosen' => [
+            'driver' => 'session',
+            'provider' => 'dosens',
+        ],
+
+        'api-dosen' => [
+            'driver' => 'token',
+            'provider' => 'dosens',
+        ],
     ],
 
     /*
@@ -68,6 +88,16 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
+        ],
+
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Admin::class,
+        ],
+
+        'dosens' => [
+            'driver' => 'eloquent',
+            'model' => App\Dosen::class,
         ],
 
         // 'users' => [
@@ -96,6 +126,18 @@ return [
             'provider' => 'users',
             'table' => 'password_resets',
             'expire' => 60,
+        ],
+
+        'admins' => [
+            'provider' => 'admins',
+            'table' => 'password_resets',
+            'expire' => 15,
+        ],
+
+        'dosens' => [
+            'provider' => 'dosens',
+            'table' => 'password_resets',
+            'expire' => 15,
         ],
     ],
 
