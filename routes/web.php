@@ -46,12 +46,6 @@ Route::group(['prefix' => 'admin'], function() {
     Route::post('/password/email', 'AuthAdmin\ForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
     Route::get('/password/reset/{token}', 'AuthAdmin\ResetPasswordController@showResetForm')->name('admin.password.reset');
     Route::post('/password/reset', 'AuthAdmin\ResetPasswordController@reset');   
-
-    Route::resource('/jurusan', 'Admin\JurusanController');
-    Route::get('/matakuliah', 'Admin\MataKuliahController@index')->name('matakuliah.index');
-    Route::resource('/matakuliah/informatika', 'Admin\InformatikaController');
-    Route::resource('/dosen', 'Admin\DosenController');
-    Route::resource('/mahasiswa', 'Admin\MahasiswaController');
 });
 
 Route::group(['prefix' => 'dosen'], function() {

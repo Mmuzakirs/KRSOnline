@@ -55,13 +55,10 @@
                 <button class="btn btn-default submit">Login</button>
                 <a class="btn btn-link" href="{{ route('admin.password.request') }}">Forget your password</a>
               </div>
+
               <div class="clearfix"></div>
-              
+
             </form>
-            <h2>
-              @component('components.admin')
-              @endcomponent
-            </h2>
           </section>
         </div>
       </div>
