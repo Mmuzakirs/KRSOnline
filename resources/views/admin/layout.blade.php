@@ -63,19 +63,17 @@
                     <a href="{{ route('admin.home') }}"><i class="fa fa-home"></i> Home </a>                    
                   </li>
                   <li>
-                    <a><i class="fa fa-edit"></i> Forms </a>
+                    <a href="{{ route('jurusan.index') }}"><i class="fa fa-book"></i> Jurusan </a>
                   </li>
                   <li>
-                    <a><i class="fa fa-desktop"></i> UI Elements </a>
-                  </li>
-                  <li><a href="{{ route('admin.jurusans.index') }}"><i class="fa fa-table"></i> Jurusan </a>
+                    <a href="{{ route('matakuliah.index') }}"><i class="fa fa-book"></i> Mata Kuliah </a>
                   </li>
                   <li>
-                    <a><i class="fa fa-bar-chart-o"></i> Data Presentation </a>
+                    <a href="{{ route('dosen.index') }}"><i class="fa fa-user"></i> Dosen </a>                    
                   </li>
                   <li>
-                    <a><i class="fa fa-clone"></i> Layouts </a>
-                  </li>
+                    <a href="{{ route('mahasiswa.index') }}"><i class="fa fa-user"></i> Mahasiswa </a>                    
+                  </li> 
                 </ul>
               </div>
 
