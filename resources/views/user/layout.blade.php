@@ -60,22 +60,14 @@
                 <h3>General</h3>
                 <ul class="nav side-menu">
                   <li>
-                    <a href="home"><i class="fa fa-home"></i> Home </a>                    
+                    <a href="home"> Home </a>                    
                   </li>
                   <li>
-                    <a><i class="fa fa-edit"></i> Forms </a>
-                  </li>
+                    <a href="profil"> Profil </a>
+                  </li>   
                   <li>
-                    <a><i class="fa fa-desktop"></i> UI Elements </a>
-                  </li>
-                  <li><a><i class="fa fa-table"></i> Tables </a>
-                  </li>
-                  <li>
-                    <a><i class="fa fa-bar-chart-o"></i> Data Presentation </a>
-                  </li>
-                  <li>
-                    <a><i class="fa fa-clone"></i> Layouts </a>
-                  </li>
+                    <a href="krs"> KRS </a>
+                  </li>         
                 </ul>
               </div>
 
@@ -120,14 +112,6 @@
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a href="javascript:;"> Profile</a></li>
-                    <li>
-                      <a href="javascript:;">
-                        <span class="badge bg-red pull-right">50%</span>
-                        <span>Settings</span>
-                      </a>
-                    </li>
-                    <li><a href="javascript:;">Help</a></li>
                     <li>
                       <a href="{{ route('logout') }}" onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">

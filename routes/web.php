@@ -22,6 +22,15 @@ Route::get('/tes', function() {
 Route::get('/input', function() {
     return view('input');
 });
+Route::get('/krs', function() {
+    return view('user.krs');
+});
+Route::get('/profil', function() {
+    return view('user.profil');
+});
+Route::get('/edit', function() {
+    return view('user.profiledit');
+});
 
 Auth::routes();
 
