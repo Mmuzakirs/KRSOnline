@@ -28,7 +28,7 @@
             </div>
               <div class="form-group">
                         <div class="col-md-10 col-md-offset-11">
-                            <button type="button" class="btn btn-warning"><a href="/edit">Edit</a></button>
+                            <button type="button" class="btn btn-warning"><a href="/editz">Edit</a></button>
                         </div>
                       </div>
             <!-- /.box-body -->
